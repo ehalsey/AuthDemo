@@ -27,7 +27,7 @@ namespace DevProtocol.Xam.Demos.AuthDemo.ViewModels
 
 			var dic = new Dictionary<string, string>();
 			dic.Add("client_id", ApiKeys.ClientId);
-			dic.Add("response_type", "Assertion");
+			dic.Add("response_type", "code");
 			dic.Add("scope", ApiKeys.Scope);
 			dic.Add("redirect_uri", ApiKeys.RedirectUrl);
 			_currentCSRFToken = Guid.NewGuid().ToString("N");
